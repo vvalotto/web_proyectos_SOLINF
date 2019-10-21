@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}ProyeSOLINF{% endblock %}
+
+{% block content %}
+
+    <div class="container-fluid">
+
+        <div class="align-middle" style="height: 100px; width: 400px; background-color:floralwhite;">
+            <h1 class="text-center">Estadísticas</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label> Productividad </label>
+            </div>
+            <div class="col-sm-2">
+                <label>{{form.productividad|round(2)}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label> Esfuerzo Real (Hrs) </label>
+            </div>
+            <div class="col-sm-2">
+                <label>{{form.esfuerzo_real|round(2)}}</label>
+            </div>
+        </div>
+                <div class="row">
+            <div class="col-sm-2">
+                <label> Tamaño Real (UCPs) </label>
+            </div>
+            <div class="col-sm-2">
+                <label>{{form.tamanio_real|int}}</label>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
