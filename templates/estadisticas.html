@@ -26,12 +26,28 @@
                 <label>{{form.esfuerzo_real|round(2)}}</label>
             </div>
         </div>
-                <div class="row">
+        <div class="row">
             <div class="col-sm-2">
                 <label> Tamaño Real (UCPs) </label>
             </div>
             <div class="col-sm-2">
                 <label>{{form.tamanio_real|int}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label> Densidad de Defectos </label>
+            </div>
+            <div class="col-sm-2">
+                <label>{{form.densidad_defectos|round(2)}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label> Cantidad de Defectos </label>
+            </div>
+            <div class="col-sm-2">
+                <label>{{form.cantidad_defectos|int}}</label>
             </div>
         </div>
     </div>

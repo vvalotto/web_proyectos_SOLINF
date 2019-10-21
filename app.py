@@ -68,6 +68,8 @@ def estadisticas():
     formulario.productividad = respuesta['productividad']
     formulario.esfuerzo_real = respuesta['esfuerzo real']
     formulario.tamanio_real = respuesta['tamaño real']
+    formulario.densidad_defectos = respuesta['densidad defectos']
+    formulario.cantidad_defectos = respuesta['cantidad defectos']
     return render_template("estadisticas.html", form=formulario)
 
 

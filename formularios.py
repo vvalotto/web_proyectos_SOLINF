@@ -77,3 +77,5 @@ class EstadisticasForm(FlaskForm):
     productividad = StringField("Productividad")
     esfuerzo_real = StringField("Esfuerzo Real")
     tamanio_real = StringField("Tamaño Real")
+    densidad_defectos = StringField("Densidad Defectos")
+    cantidad_defectos = StringField("Cantidad_Defectos")
